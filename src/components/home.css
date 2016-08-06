@@ -1,0 +1,29 @@
+@import './css-shared/variables.css';
+@import './css-shared/global.css';
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 4em;
+}
+
+.title {
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+.button {
+  border: 1px solid var(--mainDark);
+  width: 12em;
+  padding: 1.5em 2em;
+  text-transform: uppercase;
+  background-color: var(--lightGrey);
+}

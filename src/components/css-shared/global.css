@@ -1,0 +1,39 @@
+/* Global Style
+   ========================================================================== */
+
+html {
+  background-color: var(--mainLight);
+  color: var(--mainDark);
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+:global a {
+  color: inherit;
+}
+
+:global button {
+  cursor:pointer;
+  border:0;
+  -webkit-appearance:none;
+  outline:0;
+  padding:0;
+  box-shadow:none;
+  user-select:none;
+  text-decoration:none;
+  font-style:normal;
+  color:inherit;
+  background-color: transparent;
+}
+
+:global td {
+  border: 1px solid var(--mainDark);
+  text-align: left;
+  padding: .5rem;
+}
+
+:global th {
+  border: 1px solid var(--mainDark);
+  text-align: left;
+  padding: .5rem;
+}
