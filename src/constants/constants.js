@@ -1,1 +1,1 @@
-export const url = 'http://jsonplaceholder.typicode.com/users';
+export const rootUrl = 'http://jsonplaceholder.typicode.com/';

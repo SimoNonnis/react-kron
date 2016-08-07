@@ -1,3 +1,5 @@
+@import './css-shared/variables.css';
+@import './css-shared/global.css';
 
 .container {
   max-width: 600px;

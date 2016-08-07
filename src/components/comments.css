@@ -1,0 +1,25 @@
+@import './css-shared/variables.css';
+
+.title {
+  text-align: center;
+  margin: 2em 0 1em 0;
+}
+
+.comment {
+  margin: 0 auto 2em;
+  background-color: var(--lightGrey);
+}
+
+.header {
+  background-color: var(--grey);
+}
+
+.header__item {
+  display: inline-block;
+  padding: .5em;
+}
+
+.body {
+  margin: 0;
+  padding: 1em;
+}

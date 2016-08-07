@@ -1,4 +1,4 @@
-@import './css-shared/variables.css';
+
 
 .container {
   width: 100%;
@@ -11,13 +11,5 @@
 }
 
 .title {
-  margin: 0 0 2em 0;
-}
-
-.table {
-  border-collapse: collapse;
-}
-
-.tableHeader {
-  background-color: var(--lightGrey);
+ font-size: 4em;
 }
