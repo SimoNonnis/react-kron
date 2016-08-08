@@ -50,7 +50,7 @@ class Users extends React.Component {
               return (
                 <tr key={ user.id } >
                   <td>{ user.id }</td>
-                  <td><Link to="/posts">{ user.name }</Link></td>
+                  <td><Link to={'/posts/' + user.id}>{ user.name }</Link></td>
                   <td>{ user.username }</td>
                   <td>{ user.email }</td>
                 </tr>

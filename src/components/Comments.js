@@ -14,7 +14,7 @@ class Comments extends React.Component {
   }
 
   componentWillMount () {
-    this.getComments();
+    this.getComments(this.props.params.postId);
   }
 
   getComments (id = 1) {
@@ -53,6 +53,7 @@ class Comments extends React.Component {
 }
 
 Comments.propTypes = {
+  params: React.PropTypes.object,
   comments: React.PropTypes.array
 };
 

@@ -15,8 +15,8 @@ const routes = (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
     <Route path="/users"   component={Users} />
-    <Route path="/posts"  component={Posts} />
-    <Route path="/comments"  component={Comments} />
+    <Route path="/posts/:userId"  component={Posts} />
+    <Route path="/comments/:postId"  component={Comments} />
     <Route path="*" component={NoMatch} />
   </Route>
 </Router>);

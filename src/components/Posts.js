@@ -15,7 +15,7 @@ class Posts extends React.Component {
   }
 
   componentWillMount () {
-    this.getPosts();
+    this.getPosts(this.props.params.userId);
   }
 
   getPosts (id = 1) {
@@ -42,7 +42,9 @@ class Posts extends React.Component {
               <header className={styles.header} >
                 <span className={styles.header__item}>Post id: { post.id }</span>
                 <span className={styles.header__item}>User id: { post.userId }</span>
-                <p className={styles.postTitle}><Link to="/comments">{ post.title }</Link></p>
+                <p className={styles.postTitle}>
+                  <Link to={'/comments/' + post.id}>{ post.title }</Link>
+                </p>
               </header>
 
               <p className={styles.body} >{ post.body }</p>
@@ -57,6 +59,7 @@ class Posts extends React.Component {
 
 
 Posts.propTypes = {
+  params: React.PropTypes.object,
   posts: React.PropTypes.array
 };
 
